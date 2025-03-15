@@ -6,7 +6,7 @@
 /*   By: pschmunk <pschmunk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/06 16:04:25 by pschmunk          #+#    #+#             */
-/*   Updated: 2025/03/11 23:05:42 by pschmunk         ###   ########.fr       */
+/*   Updated: 2025/03/13 18:16:48 by pschmunk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,6 +84,7 @@ typedef	struct s_data
 }	t_data;
 
 void	data_init(t_data *data, t_image *img);
+int		close_mlx(t_data *data);
 int		key_press(int keycode, t_data *data);
 int		key_release(int keycode, t_data *data);
 void	move_player(t_data *data);

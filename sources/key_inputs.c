@@ -6,7 +6,7 @@
 /*   By: pschmunk <pschmunk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/19 16:10:55 by pschmunk          #+#    #+#             */
-/*   Updated: 2025/03/05 18:15:31 by pschmunk         ###   ########.fr       */
+/*   Updated: 2025/03/13 18:18:04 by pschmunk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 int	key_press(int keycode, t_data *data)
 {
+	if (keycode == 65307)
+		close_mlx(data);
 	if (keycode == 115)
 		data->key_W = 1;
 	if (keycode == 97)
