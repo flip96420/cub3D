@@ -6,7 +6,7 @@
 /*   By: pschmunk <pschmunk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/19 20:13:51 by pschmunk          #+#    #+#             */
-/*   Updated: 2025/03/11 23:33:04 by pschmunk         ###   ########.fr       */
+/*   Updated: 2025/03/15 14:30:31 by pschmunk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,7 +90,6 @@ void	render_map(t_data *data)
 				render_square(data->image, i, j, 0x000000);
 		}
 	}
-	// mlx_put_image_to_window(data->mlx, data->win, data->image->img, 0, 0);
 }
 
 void	render_player(t_data *data)
@@ -103,7 +102,6 @@ void	render_player(t_data *data)
 				render_small_square(data->image, x, y, 0x0000FF);
 		}
 	}
-	// mlx_put_image_to_window(data->mlx, data->win, data->image->img, 0, 0);
 }
 
 void	clear_image(t_data *data)
@@ -125,14 +123,12 @@ void	clear_image(t_data *data)
 		}
 		x++;
 	}
-	mlx_put_image_to_window(data->mlx, data->win, data->image->img, 0, 0);
 }
 
 int	render(t_data *data)
 {
 	clear_image(data);
 	render_map(data);
-	// render_line(data, data->playerX + 15, data->playerY + 15, data->playerX + data->playerDX * WIDTH, data->playerY + data->playerDY * HEIGHT);
 	move_player(data);
 	draw_rays(data);
 	render_player(data);
