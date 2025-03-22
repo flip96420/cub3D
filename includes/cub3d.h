@@ -6,7 +6,7 @@
 /*   By: pschmunk <pschmunk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/06 16:04:25 by pschmunk          #+#    #+#             */
-/*   Updated: 2025/03/13 18:16:48 by pschmunk         ###   ########.fr       */
+/*   Updated: 2025/03/22 21:46:09 by pschmunk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,6 +80,7 @@ typedef	struct s_data
 	double		dirY;
 	double		camX;
 	double		camY;
+	int			**textures;
 	t_image	*image;
 }	t_data;
 
@@ -93,5 +94,6 @@ void	render_line(t_data *data, int x0, int y0, int x1, int y1, int color);
 int		render(t_data *data);
 double	get_angle(double angle);
 void	px_put(t_image *img, int x, int y, int color);
+void	init_textures(t_data *data);
 
 #endif

@@ -6,7 +6,7 @@
 #    By: pschmunk <pschmunk@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/06 14:56:59 by pschmunk          #+#    #+#              #
-#    Updated: 2025/02/24 21:32:09 by pschmunk         ###   ########.fr        #
+#    Updated: 2025/03/22 21:46:58 by pschmunk         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,6 +18,7 @@ SRC =	sources/init.c			\
 		sources/raycasting.c	\
 		sources/render.c		\
 		sources/utils.c			\
+		sources/textures.c		\
 
 CC = gcc
 
